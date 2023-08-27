@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.overline-text,
+.sub-title {
+  @apply uppercase;
+  font-weight: bold;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.h1 {
+  line-height: 58px;
+  letter-spacing: 2px;
+  font-size: 58px;
+}
+.h2 {
+  line-height: 44px;
+  letter-spacing: 1.5px;
+  font-size: 40px;
+}
+.h3 {
+  line-height: 36px;
+  letter-spacing: 1.15px;
+  font-size: 32px;
+}
+.h4 {
+  line-height: 38px;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+.h5 {
+  line-height: 33px;
+  letter-spacing: 1.7px;
+  font-size: 24px;
+}
+.h6 {
+  line-height: 24px;
+  letter-spacing: 1.3px;
+  font-size: 18px;
+}
+.overline-text {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 10px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sub-title {
+  font-size: 13px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.body-text {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.bg-newproduct-img {
+  background-image: url(../public/assets/home/mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button {
+  @apply uppercase px-6 py-3 inline-block;
+  font-size: medium;
+  letter-spacing: 1px;
 }
