@@ -1,4 +1,4 @@
 const Footer = () => {
-  return <div>Footer</div>;
+  return <div className='h-screen'>Footer</div>;
 };
 export default Footer;

@@ -74,3 +74,12 @@
   font-size: medium;
   letter-spacing: 1px;
 }
+
+.shadow-box {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  height: 20px;
+  background: transparent;
+  box-shadow: 3px 1px 40px 20px rgba(66, 68, 90, 1);
+}

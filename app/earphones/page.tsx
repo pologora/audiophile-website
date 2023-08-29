@@ -1,4 +1,6 @@
+import ShopCategoryCardsList from '@/components/shop-links/ShopCategoryCardsList';
+
 const Earphones = () => {
-  return <div>Earphones</div>;
+  return <section></section>;
 };
 export default Earphones;

@@ -1,10 +1,11 @@
 import NewProduct from '@/components/home/NewProduct';
-import Image from 'next/image';
+import ShopCategoryCardsList from '@/components/shop-links/ShopCategoryCardsList';
 
 export default function Home() {
   return (
     <main>
-      <NewProduct />
+      {<NewProduct />}
+      {<ShopCategoryCardsList />}
     </main>
   );
 }
