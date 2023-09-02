@@ -83,3 +83,13 @@
   background: transparent;
   box-shadow: 3px 1px 40px 20px rgba(66, 68, 90, 1);
 }
+
+.custom-container {
+  @apply max-w-5xl mx-auto;
+}
+
+.hoverable:hover .linkToChange,
+.hoverable:focus .linkToChange {
+  opacity: 100;
+  @apply text-bg-accent;
+}

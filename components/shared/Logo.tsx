@@ -1,4 +1,14 @@
+import Link from 'next/link';
+
 const Logo = () => {
-  return <p className='text-text-light font-extrabold text-2xl'>audiophile</p>;
+  return (
+    <Link
+      scroll={true}
+      href={'/'}
+      className='text-text-light font-extrabold text-2xl leading-none'
+    >
+      audiophile
+    </Link>
+  );
 };
 export default Logo;

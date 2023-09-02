@@ -11,7 +11,8 @@ const config: Config = {
       colors: {
         'text-dark': '#000000',
         'text-light': '#fff',
-        'bg-dark': '#101010',
+        'text-secondary': '',
+        'bg-dark': '#191919',
         'bg-light-primary': '#fafafa',
         'bg-light-secondary': '#f1f1f1',
         'bg-accent': '#D87D4A',

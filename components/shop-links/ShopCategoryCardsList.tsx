@@ -32,12 +32,14 @@ const shopLinks: ShopLink[] = [
   },
 ];
 
-const ShopCategoryCardsList = () => {
+const ShopCategoryCardsList = ({ padding }: { padding?: number }) => {
   const renderedShopLinks = shopLinks.map((link) => (
     <ShopCategoryCard key={link.category} {...link} />
   ));
   return (
-    <section className='bg-white w-full px-8 pt-2 pb-2 rounded-b-lg'>
+    <section
+      className={`bg-white  py-2 rounded-b-lg sm:grid sm:grid-cols-3 sm:gap-4 px-${padding}`}
+    >
       {renderedShopLinks}
     </section>
   );
