@@ -3,9 +3,15 @@ import Link from 'next/link';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import { ShopLink } from './ShopCategoryCardsList';
 
-const ShopCategoryCard = ({ category, src, link, about }: ShopLink) => {
+const ShopCategoryCard = ({
+  category,
+  src,
+  link,
+  about,
+  toggleMenu,
+}: ShopLink & { toggleMenu?: () => void }) => {
   return (
-    <Link href={link} className='hoverable' scroll={true}>
+    <Link href={link} className='hoverable' scroll={true} onClick={toggleMenu}>
       <figure className='bg-bg-light-secondary rounded-lg text-center relative h-40 mt-20 mb-10 '>
         <Image
           src={src}

@@ -2,9 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
-
 import Header from '@/components/header/Header';
-import MobileTabletNavigation from '@/components/navigation/MobileTabletNavigation';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-monrope' });
 

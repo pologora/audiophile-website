@@ -1,5 +1,3 @@
-import './YX1Earphones.css';
-
 const YX1Earphones = () => {
   return (
     <section className='mt-10 mb-20 sm:flex sm:justify-between gap-4'>

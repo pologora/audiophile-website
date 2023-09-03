@@ -32,9 +32,15 @@ const shopLinks: ShopLink[] = [
   },
 ];
 
-const ShopCategoryCardsList = ({ padding }: { padding?: number }) => {
+const ShopCategoryCardsList = ({
+  padding,
+  toggleMenu,
+}: {
+  padding?: number;
+  toggleMenu?: () => void;
+}) => {
   const renderedShopLinks = shopLinks.map((link) => (
-    <ShopCategoryCard key={link.category} {...link} />
+    <ShopCategoryCard key={link.category} {...link} toggleMenu={toggleMenu} />
   ));
   return (
     <section

@@ -1,0 +1,83 @@
+[
+  {
+    "name": "headphones",
+    "products": [
+      {
+        "name": "XX99 Mark II headphones",
+        "new product": "true",
+        "about": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth a nd precision of studio-quality sound.",
+        "link": "/products/xx99mark2",
+        "image": {
+          "mobile": "/assets/product-xx99-mark-two-headphones/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+        }
+      },
+      {
+        "name": "XX99 Mark I headphones",
+        "new product": "false",
+        "about": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
+        "link": "/products/xx99mark1",
+        "image": {
+          "mobile": "/assets/product-xx99-mark-one-headphones/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+        }
+      },
+      {
+        "name": "XX59 headphones",
+        "new product": "false",
+        "about": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+        "link": "/products/xx59",
+        "image": {
+          "mobile": "/assets/product-xx59-headphones/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-xx59-headphones/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "name": "speakers",
+    "products": [
+      {
+        "name": "ZX9 Speaker",
+        "new product": "true",
+        "about": "Upgrade your sound system with the all new ZX9 active speaker. It`s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+        "link": "/products/zx9",
+        "image": {
+          "mobile": "/assets/product-zx9-speaker/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-zx9-speaker/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+        }
+      },
+      {
+        "name": "ZX7 Speaker",
+        "new product": "false",
+        "about": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+        "link": "/products/zx7",
+        "image": {
+          "mobile": "/assets/product-zx7-speaker/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-zx7-speaker/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-zx7-speaker/desktop/image-category-page-preview.jpg"
+        }
+      }
+    ]
+  },
+  {
+    "name": "earphones",
+    "products": [
+      {
+        "name": "YX1 wireless earphones",
+        "new product": "true",
+        "about": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+        "link": "/products/yx1",
+        "image": {
+          "mobile": "/assets/product-yx1-earphones/mobile/image-category-page-preview.jpg",
+          "tablet": "/assets/product-yx1-earphones/tablet/image-category-page-preview.jpg",
+          "desktop": "/assets/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+        }
+      }
+    ]
+  }
+]

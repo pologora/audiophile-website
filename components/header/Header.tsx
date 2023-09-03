@@ -29,7 +29,10 @@ const Header = () => {
           >
             <AiOutlineClose size={28} color='white' />
           </button>
-          <MobileTabletNavigation isMenuOpen={isMenuOpen} />
+          <MobileTabletNavigation
+            isMenuOpen={isMenuOpen}
+            toggleMenu={toggleMenu}
+          />
         </div>
         <Logo />
         <div className='hidden lg:block'>
