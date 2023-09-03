@@ -11,10 +11,10 @@ export default function Home() {
       <NewProduct />
       <div className='custom-container sm:px-12 px-8  m-auto'>
         <ShopCategoryCardsList />
-        <BestGearCard />
         <ZX9Speaker />
         <ZX7Speaker />
         <YX1Earphones />
+        <BestGearCard />
       </div>
     </main>
   );

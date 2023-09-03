@@ -32,7 +32,9 @@ const Header = () => {
           <MobileTabletNavigation isMenuOpen={isMenuOpen} />
         </div>
         <Logo />
-        <DesktopNavigation />
+        <div className='hidden lg:block'>
+          <DesktopNavigation />
+        </div>
         <CartButton />
       </div>
     </header>

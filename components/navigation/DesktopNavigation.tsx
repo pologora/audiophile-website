@@ -24,15 +24,17 @@ const DesktopNavigation = () => {
     <Link
       key={link.title}
       href={link.link}
-      className='uppercase text-text-light opacity-90 mx-4 hover:text-bg-accent 
+      className='uppercase inline-block text-text-light opacity-90 hover:text-bg-accent 
       hover:opacity-100 focus:text-bg-accent focus:opacity-100'
     >
       {link.title}
     </Link>
   ));
   return (
-    <nav className='hidden lg:block'>
-      <ul>{renderedMenuLinks}</ul>
+    <nav>
+      <ul className='flex flex-col gap-6 items-center sm:flex-row'>
+        {renderedMenuLinks}
+      </ul>
     </nav>
   );
 };
