@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const YX1Earphones = () => {
   return (
     <section className='mt-10 mb-20 sm:flex sm:justify-between gap-4'>
@@ -20,12 +22,13 @@ const YX1Earphones = () => {
       </div>
       <div className='bg-bg-light-secondary rounded-lg mt-10 yx1-home-card px-6 py-10 sm:w-1/2 sm:mt-0'>
         <h2 className='h3 mb-10'>YX1 Earphones</h2>
-        <button
+        <Link
+          href={'/products/yx1'}
           className='button border-2 border-black
         focus:bg-bg-dark focus:text-text-light hover:bg-bg-dark hover:text-text-light'
         >
           See product{' '}
-        </button>
+        </Link>
       </div>
     </section>
   );

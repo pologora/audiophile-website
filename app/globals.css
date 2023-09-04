@@ -23,7 +23,6 @@
 .overline-text,
 .sub-title {
   @apply uppercase;
-  font-weight: bold;
 }
 
 .h1 {

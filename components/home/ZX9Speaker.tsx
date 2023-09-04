@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const ZX9Speaker = () => {
   return (
     <section
@@ -30,9 +32,12 @@ const ZX9Speaker = () => {
           Upgrade to premium speakers that are phenomenally build to deliver
           truly remarkable sound.
         </p>
-        <button className='button bg-bg-dark hover:bg-gray-700 z-10'>
+        <Link
+          href={'/products/zx9'}
+          className='button bg-bg-dark hover:bg-gray-700 z-10'
+        >
           See product
-        </button>
+        </Link>
       </div>
     </section>
   );

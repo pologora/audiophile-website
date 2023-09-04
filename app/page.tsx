@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <NewProduct />
-      <div className='custom-container sm:px-12 px-8  m-auto'>
+      <div className='custom-container sm:px-12 px-8 m-auto'>
         <ShopCategoryCardsList />
         <ZX9Speaker />
         <ZX7Speaker />

@@ -1,6 +1,6 @@
 const BestGearCard = () => {
   return (
-    <article className='text-center lg:flex flex-row-reverse justify-between lg:items-center'>
+    <article className='text-center lg:flex flex-row-reverse justify-between lg:items-center my-36'>
       <picture className='lg:basis-1/2 block'>
         <source
           media='(min-width:1024px)'

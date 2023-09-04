@@ -3,8 +3,9 @@
     "name": "headphones",
     "products": [
       {
-        "name": "XX99 Mark II headphones",
-        "new product": "true",
+        "name": "XX99 Mark II",
+        "category": "headphones",
+        "new_product": "true",
         "about": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth a nd precision of studio-quality sound.",
         "link": "/products/xx99mark2",
         "image": {
@@ -14,8 +15,9 @@
         }
       },
       {
-        "name": "XX99 Mark I headphones",
-        "new product": "false",
+        "name": "XX99 Mark I",
+        "category": "headphones",
+        "new_product": "false",
         "about": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
         "link": "/products/xx99mark1",
         "image": {
@@ -25,8 +27,9 @@
         }
       },
       {
-        "name": "XX59 headphones",
-        "new product": "false",
+        "name": "XX59",
+        "category": "headphones",
+        "new_product": "false",
         "about": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
         "link": "/products/xx59",
         "image": {
@@ -41,8 +44,9 @@
     "name": "speakers",
     "products": [
       {
-        "name": "ZX9 Speaker",
-        "new product": "true",
+        "name": "ZX9",
+        "category": "speaker",
+        "new_product": "true",
         "about": "Upgrade your sound system with the all new ZX9 active speaker. It`s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
         "link": "/products/zx9",
         "image": {
@@ -52,8 +56,9 @@
         }
       },
       {
-        "name": "ZX7 Speaker",
-        "new product": "false",
+        "name": "ZX7",
+        "category": "speaker",
+        "new_product": "false",
         "about": "Stream high quality sound wirelessly with minimal loss. The ZX7 bookshelf speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
         "link": "/products/zx7",
         "image": {
@@ -68,8 +73,9 @@
     "name": "earphones",
     "products": [
       {
-        "name": "YX1 wireless earphones",
-        "new product": "true",
+        "name": "YX1 wireless",
+        "category": "earphones",
+        "new_product": "true",
         "about": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
         "link": "/products/yx1",
         "image": {
