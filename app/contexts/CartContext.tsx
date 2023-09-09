@@ -1,5 +1,5 @@
 'use client';
-import { createContext, useState } from 'react';
+import { createContext, useState, useContext } from 'react';
 import CartProduct from '@/interfaces/CartProductInterface';
 
 export const CartContext = createContext<{
@@ -17,3 +17,11 @@ const CartContextProvider = ({ children }: { children: React.ReactNode }) => {
   );
 };
 export default CartContextProvider;
+
+export const useCartContext = () => {
+  const context = useContext(CartContext);
+  if (!context) {
+    throw new Error('useCartContext must be withing a CartContextProvider');
+  }
+  return context;
+};

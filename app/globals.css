@@ -82,9 +82,14 @@
 
 .button {
   @apply uppercase px-6 py-3 inline-block;
-  font-size: medium;
+  font-size: small;
   letter-spacing: 1px;
   font-weight: 500;
+}
+
+.button.loading {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .shadow-box {
@@ -160,6 +165,10 @@
   @apply uppercase py-3 inline-block w-12 text-center bg-bg-light-secondary;
 }
 
+.change-quantity-cart-btn {
+  @apply uppercase py-2 text-sm inline-block w-10 text-center bg-bg-light-secondary;
+}
+
 @media (min-width: 640px) and (max-width: 880px) {
   .change-quantity-btn {
     font-size: small;
@@ -180,4 +189,22 @@
 
 .custom-right-margin {
   right: 30%;
+}
+
+.loader {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid white;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

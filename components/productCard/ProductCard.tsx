@@ -1,13 +1,13 @@
 'use client';
 
 import Product from '@/interfaces/productInterface';
-import { useState, useContext } from 'react';
+import { useState } from 'react';
 import ProductCardGallary from './ProductCardGallary';
 import ProductIncludes from './ProductIncludes';
 import ProductFeatures from './ProductFeatures';
 import ProductAddToCart from './ProductAddToCart';
 import OtherProducts from './OtherProducts';
-import { CartContext } from '@/app/contexts/CartContext';
+import { useCartContext } from '@/app/contexts/CartContext';
 import CartProduct from '@/interfaces/CartProductInterface';
 
 const getProductNameAndCategory = (productName: string) => {
@@ -24,8 +24,7 @@ interface ProductCardProps {
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [productQuantity, setProductQuantity] = useState(1);
 
-  const cartContext = useContext(CartContext);
-  const setCart = cartContext?.setCart;
+  const { setCart } = useCartContext();
 
   const handleSubstract = () => {
     if (productQuantity > 1) {
@@ -38,8 +37,6 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   };
 
   const {
-    category,
-    categoryImage,
     description,
     features,
     gallery,
@@ -60,17 +57,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       price,
     };
 
-    if (setCart) {
-      setCart((prev: CartProduct[]) => {
-        const copyArray = [...prev];
-        const itemInCart = copyArray.find((item) => item.name === name);
-        if (itemInCart) {
-          itemInCart.productQuantity += productQuantity;
-          return copyArray;
-        }
-        return [...prev, addedProduct];
-      });
-    }
+    setCart((prev: CartProduct[]) => {
+      const copyArray = [...prev];
+      const itemInCart = copyArray.find((item) => item.name === name);
+      if (itemInCart) {
+        itemInCart.productQuantity += productQuantity;
+        return copyArray;
+      }
+      return [...prev, addedProduct];
+    });
   };
 
   return (

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import CartElement from './CartElement';
 import { useContext } from 'react';
-import { CartContext } from '@/app/contexts/CartContext';
+import { CartContext, useCartContext } from '@/app/contexts/CartContext';
 
 type CartProps = {
   isOpen: boolean;
@@ -9,22 +9,49 @@ type CartProps = {
 };
 
 const Cart = ({ isOpen, onClose }: CartProps) => {
-  const context = useContext(CartContext);
-  const cart = context?.cart;
-  const setCart = context?.setCart;
+  const { cart, setCart } = useCartContext();
 
-  const handleClearCart = () => {
-    if (setCart) {
-      setCart([]);
-    }
+  const handleAddItem = (name: string) => {
+    setCart((prev) => {
+      const array = [...prev];
+      const itemInCart = array.find((item) => item.name === name);
+      if (itemInCart) {
+        itemInCart.productQuantity += 1;
+      }
+      return array;
+    });
   };
 
-  const total = cart?.reduce((acc, item) => {
+  const handleSubstract = (name: string) => {
+    setCart((prev) => {
+      const array = [...prev];
+      const itemIndex = array.findIndex((item) => item.name === name);
+      if (itemIndex !== -1) {
+        if (array[itemIndex].productQuantity <= 1) {
+          array.splice(itemIndex, 1);
+        } else {
+          array[itemIndex].productQuantity -= 1;
+        }
+      }
+      return array;
+    });
+  };
+
+  const handleClearCart = () => {
+    setCart([]);
+  };
+
+  const totalPrice = cart.reduce((acc, item) => {
     return acc + item.price * item.productQuantity;
   }, 0);
 
-  const renderedCartElements = cart?.map((product, i: number) => (
-    <CartElement product={product} key={i} />
+  const renderedCartElements = cart.map((product, i: number) => (
+    <CartElement
+      product={product}
+      key={i}
+      add={handleAddItem}
+      substract={handleSubstract}
+    />
   ));
 
   const isCartVisible = isOpen ? 'block' : 'hidden';
@@ -44,7 +71,7 @@ const Cart = ({ isOpen, onClose }: CartProps) => {
       >
         <div className='flex justify-between'>
           <h3 className='h6 font-bold'>
-            cart <span>(3)</span>
+            cart <span>({cart?.length})</span>
           </h3>
           <button className='text-text-secondary' onClick={handleClearCart}>
             Remove all
@@ -53,7 +80,7 @@ const Cart = ({ isOpen, onClose }: CartProps) => {
         <div className='flex gap-6 flex-col'>{renderedCartElements}</div>
         <div className='flex justify-between'>
           <p className='uppercase text-text-secondary'>total</p>
-          <span className='font-bold'>${total}</span>
+          <span className='font-bold'>${totalPrice}</span>
         </div>
         <Link
           href={'/checkout '}

@@ -9,13 +9,15 @@ type CartElementProps = {
     name: string;
     price: number;
   };
+  add: (name: string) => void;
+  substract: (name: string) => void;
 };
 
-const CartElement = ({ product }: CartElementProps) => {
+const CartElement = ({ product, add, substract }: CartElementProps) => {
   const { slug, productQuantity, name, price } = product;
 
   return (
-    <div className='flex justify-between items-center'>
+    <div className='flex justify-between items-center gap-2'>
       <Image
         src={`/assets/cart/image-${slug}.jpg`}
         alt={'product'}
@@ -23,19 +25,25 @@ const CartElement = ({ product }: CartElementProps) => {
         height={70}
         className='rounded-md'
       />
-      <div>
+      <div className='text-left w-1/3'>
         <p className='font-bold'>{name.slice(0, name.lastIndexOf(' '))}</p>
         <p className='text-text-secondary'>
           <span className='mr-1'>$</span>
           <span>{price}</span>
         </p>
       </div>
-      <div>
-        <button className='change-quantity-btn hover:text-bg-accent focus:text-bg-accent'>
+      <div className='flex'>
+        <button
+          className='change-quantity-cart-btn hover:text-bg-accent focus:text-bg-accent'
+          onClick={() => substract(name)}
+        >
           -
         </button>
-        <span className='change-quantity-btn'>{productQuantity}</span>
-        <button className='change-quantity-btn hover:text-bg-accent focus:text-bg-accent'>
+        <span className='change-quantity-cart-btn'>{productQuantity}</span>
+        <button
+          className='change-quantity-cart-btn hover:text-bg-accent focus:text-bg-accent'
+          onClick={() => add(name)}
+        >
           +
         </button>
       </div>
