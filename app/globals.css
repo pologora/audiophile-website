@@ -155,3 +155,29 @@
     height: var(--middle-circle-radius-lg);
   }
 }
+
+.change-quantity-btn {
+  @apply uppercase py-3 inline-block w-12 text-center bg-bg-light-secondary;
+}
+
+@media (min-width: 640px) and (max-width: 880px) {
+  .change-quantity-btn {
+    font-size: small;
+    @apply py-2 w-10 text-xs;
+  }
+  .button {
+    @apply py-2 text-xs px-2;
+  }
+}
+
+.justify-self-start {
+  justify-self: center;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.custom-right-margin {
+  right: 30%;
+}

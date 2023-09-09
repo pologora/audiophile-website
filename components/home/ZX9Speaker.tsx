@@ -33,7 +33,7 @@ const ZX9Speaker = () => {
           truly remarkable sound.
         </p>
         <Link
-          href={'/products/zx9'}
+          href={'/products/zx9-speaker'}
           className='button bg-bg-dark hover:bg-gray-700 z-10'
         >
           See product

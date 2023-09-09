@@ -1,8 +1,8 @@
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-const CartButton = () => {
+const CartButton = ({ onClick }: { onClick: () => void }) => {
   return (
-    <button>
+    <button onClick={onClick}>
       <AiOutlineShoppingCart size={28} color='white' />
     </button>
   );

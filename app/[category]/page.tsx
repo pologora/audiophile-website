@@ -1,7 +1,7 @@
 import CategoryProductCard from '@/components/categoryCard/CategoryProductCard';
 import data from '@/data/categories.json';
 
-const page = ({ params }: { params: { category: string } }) => {
+const Category = ({ params }: { params: { category: string } }) => {
   const { category } = params;
   const selectedCategory = data.find((item) => item.name === category);
 
@@ -23,4 +23,4 @@ const page = ({ params }: { params: { category: string } }) => {
     </section>
   );
 };
-export default page;
+export default Category;

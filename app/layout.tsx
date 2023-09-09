@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
+import CartContextProvider from './contexts/CartContext';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-monrope' });
 
@@ -19,9 +20,11 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${manrope.className} font-sans`}>
-        <Header />
-        {children}
-        <Footer />
+        <CartContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </CartContextProvider>
       </body>
     </html>
   );

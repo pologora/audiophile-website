@@ -21,7 +21,7 @@ const ZX7Speaker = () => {
       <div className='absolute top-1/4 left-6 sm:left-12 lg:left-20'>
         <h2 className='h3 top-0'>zx7 speaker</h2>
         <Link
-          href={'/products/zx7'}
+          href={'/products/zx7-speaker'}
           className='button border-2 border-black mt-10
         focus:bg-bg-dark focus:text-text-light hover:bg-bg-dark hover:text-text-light'
         >

@@ -23,7 +23,7 @@ const YX1Earphones = () => {
       <div className='bg-bg-light-secondary rounded-lg mt-10 yx1-home-card px-6 py-10 sm:w-1/2 sm:mt-0'>
         <h2 className='h3 mb-10'>YX1 Earphones</h2>
         <Link
-          href={'/products/yx1'}
+          href={'/products/yx1-earphones'}
           className='button border-2 border-black
         focus:bg-bg-dark focus:text-text-light hover:bg-bg-dark hover:text-text-light'
         >

@@ -29,7 +29,7 @@ const NewProduct = () => {
           </p>
           <div className='my-10'>
             <Link
-              href={'/products/xx99mark2'}
+              href={'/products/xx99-mark-two-headphones'}
               className='bg-bg-accent button mb-20 hover:bg-bg-accent-hover '
             >
               See product

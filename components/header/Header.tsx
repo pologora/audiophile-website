@@ -5,11 +5,14 @@ import CartButton from '../shared/CartButton';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
 import DesktopNavigation from '../navigation/DesktopNavigation';
+import Cart from '../cart/Cart';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isCartOpen, setCartIsOpen] = useState(false);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+  const toggleCart = () => setCartIsOpen((prev) => !prev);
 
   return (
     <header className='bg-bg-dark p-4 py-8 w-full relative'>
@@ -38,7 +41,8 @@ const Header = () => {
         <div className='hidden lg:block'>
           <DesktopNavigation />
         </div>
-        <CartButton />
+        <CartButton onClick={toggleCart} />
+        <Cart isOpen={isCartOpen} onClose={toggleCart} />
       </div>
     </header>
   );
