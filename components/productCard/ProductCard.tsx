@@ -8,7 +8,7 @@ import ProductAddToCart from './ProductAddToCart';
 import OtherProducts from './OtherProducts';
 import { useCartContext } from '@/contexts/CartContext';
 import CartProduct from '@/interfaces/CartProductInterface';
-import { Product } from '@/interfaces/ProductInterface';
+import { Product } from '@/ProductInterface';
 
 const getProductNameAndCategory = (productName: string) => {
   const index = productName.lastIndexOf(' ');
@@ -17,9 +17,9 @@ const getProductNameAndCategory = (productName: string) => {
   return [name, category];
 };
 
-interface ProductCardProps {
+type ProductCardProps = {
   product: Product;
-}
+};
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const [productQuantity, setProductQuantity] = useState(1);
