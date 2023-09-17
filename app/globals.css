@@ -170,7 +170,7 @@
     @apply py-2 w-10 text-xs;
   }
   .button {
-    @apply py-2 text-xs px-2;
+    /* @apply py-2 text-xs px-2; */
   }
 }
 

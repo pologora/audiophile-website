@@ -76,6 +76,10 @@ export const formDefaultData = {
 
 const Checkout = () => {
   const [state, setState] = useState(formDefaultData);
+  const [isOpenConfirmModal, setIsOpenConfirmModal] = useState(false);
+
+  const closeConfirmModal = () => setIsOpenConfirmModal(false);
+  const openConfirmModal = () => setIsOpenConfirmModal(true);
 
   const isValidInputValue = (value: string, regex: RegExp) => {
     return regex.test(value);
@@ -89,18 +93,18 @@ const Checkout = () => {
 
   const onSubmit = () => {
     let isError = false;
-
-    for (const [key, value] of Object.entries(state)) {
-      const isValid = isValidInputValue(value.value, value.pattern);
-      if (!isValid) {
-        isError = true;
-        setState((prev) => {
-          return { ...prev, [key]: { ...prev[key], error: true } };
-        });
-      }
-    }
+    // for (const [key, value] of Object.entries(state)) {
+    //   const isValid = isValidInputValue(value.value, value.pattern);
+    //   if (!isValid) {
+    //     isError = true;
+    //     setState((prev) => {
+    //       return { ...prev, [key]: { ...prev[key], error: true } };
+    //     });
+    //   }
+    // }
     if (!isError) {
       acceptForm();
+      openConfirmModal();
       resetForm();
     } else {
       scrollToTop();
@@ -118,7 +122,11 @@ const Checkout = () => {
     <div className='bg-bg-light-secondary px-6 border'>
       <GoBackBtn />
       <CheckoutForm handleChange={handleInputChange} state={state} />
-      <Summary onSubmit={onSubmit} />
+      <Summary
+        onSubmit={onSubmit}
+        closeConfirmModal={closeConfirmModal}
+        isOpenConfirmModal={isOpenConfirmModal}
+      />
     </div>
   );
 };

@@ -37,7 +37,9 @@ const ProductAddToCart = ({
         >
           -
         </button>
-        <span className='change-quantity-btn'>{quantity}</span>
+        <span className='change-quantity-btn flex items-center justify-center'>
+          {quantity}
+        </span>
         <button
           className='change-quantity-btn hover:text-bg-accent'
           onClick={add}

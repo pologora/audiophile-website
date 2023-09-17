@@ -1,12 +1,21 @@
 import './summary.css';
 import { useCartContext } from '@/contexts/CartContext';
-import Image from 'next/image';
-import Link from 'next/link';
 import SummaryElement from './SummaryElement';
+import OrderConfirmModal from './OrderConfirmModal';
 
 const TAX = 0.23;
 
-const Summary = ({ onSubmit }: { onSubmit: () => void }) => {
+type SummaryProps = {
+  onSubmit: () => void;
+  closeConfirmModal: () => void;
+  isOpenConfirmModal: boolean;
+};
+
+const Summary = ({
+  onSubmit,
+  closeConfirmModal,
+  isOpenConfirmModal,
+}: SummaryProps) => {
   const { cart } = useCartContext();
 
   const total = cart.reduce(
@@ -50,6 +59,14 @@ const Summary = ({ onSubmit }: { onSubmit: () => void }) => {
       >
         continue & pay
       </button>
+      {cart.length > 0 && (
+        <OrderConfirmModal
+          cart={cart}
+          grandTotal={grandTotal}
+          isOpen={isOpenConfirmModal}
+          closeConfirmModal={closeConfirmModal}
+        />
+      )}
     </section>
   );
 };
