@@ -1,6 +1,5 @@
 'use client';
 
-import Product from '@/interfaces/ProductInterface';
 import { useState } from 'react';
 import ProductCardGallary from './ProductCardGallary';
 import ProductIncludes from './ProductIncludes';
@@ -9,6 +8,7 @@ import ProductAddToCart from './ProductAddToCart';
 import OtherProducts from './OtherProducts';
 import { useCartContext } from '@/contexts/CartContext';
 import CartProduct from '@/interfaces/CartProductInterface';
+import Product from '@/interfaces/ProductInterface';
 
 const getProductNameAndCategory = (productName: string) => {
   const index = productName.lastIndexOf(' ');
