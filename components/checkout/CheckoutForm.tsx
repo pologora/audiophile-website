@@ -1,6 +1,6 @@
 'use client';
+import formDefaultData from '@/data/checkoutFormDefault';
 import { useState } from 'react';
-import { formDefaultData } from '@/app/checkout/page';
 
 type CheckoutFormProps = {
   state: typeof formDefaultData;
