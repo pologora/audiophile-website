@@ -21,7 +21,7 @@ interface OtherProducts {
   image: ImageSet;
 }
 
-interface Product {
+export interface Product {
   id: number;
   slug: string;
   name: string;
@@ -37,5 +37,3 @@ interface Product {
   others: OtherProducts[];
   abbr: string;
 }
-
-export default Product;
