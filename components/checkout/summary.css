@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.summary-label {
+  @apply text-text-secondary uppercase;
+}
+
+.summary-value {
+  @apply font-bold;
+}
+
+.summary-grand-total {
+  @apply font-bold text-bg-accent;
+}
+
+.summary-value::before,
+.summary-grand-total::before {
+  content: '$';
+  @apply mr-1;
+}
+
+.summary-item-container {
+  @apply flex justify-between mb-2;
+}
+
+.summary-item-container:last-of-type {
+  @apply my-6;
+}

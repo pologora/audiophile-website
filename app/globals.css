@@ -12,6 +12,7 @@
   --big-circle-radius-lg: 50rem;
   --middle-circle-radius-lg: 28rem;
   --small-circle-radius-lg: 24rem;
+  --error-clr: red;
 }
 
 .h1,
@@ -67,17 +68,11 @@
   line-height: 25px;
   letter-spacing: 1px;
 }
+
 .body-text {
   font-size: 15px;
   line-height: 25px;
   font-weight: 500;
-}
-
-.bg-newproduct-img {
-  background-image: url(../public/assets/home/mobile/image-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .button {
@@ -183,10 +178,6 @@
   justify-self: center;
 }
 
-.no-scroll {
-  overflow: hidden;
-}
-
 .custom-right-margin {
   right: 30%;
 }
@@ -207,4 +198,30 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+input[type='radio'] {
+  @apply accent-bg-accent;
+}
+
+form h2 {
+  @apply text-bg-accent h6 font-medium my-4;
+}
+
+form label {
+  @apply font-medium block capitalize mb-1;
+}
+
+form input[type='text'],
+form input[type='number'],
+form input[type='email'] {
+  @apply bg-bg-light-primary border rounded-md px-4 py-3 mb-4 w-full;
+}
+
+.label-error-wrapper {
+  @apply flex justify-between;
+}
+
+.error {
+  @apply text-[var(--error-clr)];
 }

@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import CartElement from './CartElement';
-import { useContext } from 'react';
-import { CartContext, useCartContext } from '@/app/contexts/CartContext';
+import { useCartContext } from '@/contexts/CartContext';
 
 type CartProps = {
   isOpen: boolean;
@@ -45,10 +44,10 @@ const Cart = ({ isOpen, onClose }: CartProps) => {
     return acc + item.price * item.productQuantity;
   }, 0);
 
-  const renderedCartElements = cart.map((product, i: number) => (
+  const renderedCartElements = cart.map((product) => (
     <CartElement
       product={product}
-      key={i}
+      key={product.abbr}
       add={handleAddItem}
       substract={handleSubstract}
     />

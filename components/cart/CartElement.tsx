@@ -8,13 +8,14 @@ type CartElementProps = {
     productQuantity: number;
     name: string;
     price: number;
+    abbr: string;
   };
   add: (name: string) => void;
   substract: (name: string) => void;
 };
 
 const CartElement = ({ product, add, substract }: CartElementProps) => {
-  const { slug, productQuantity, name, price } = product;
+  const { slug, productQuantity, name, price, abbr } = product;
 
   return (
     <div className='flex justify-between items-center gap-2'>
@@ -26,7 +27,7 @@ const CartElement = ({ product, add, substract }: CartElementProps) => {
         className='rounded-md'
       />
       <div className='text-left w-1/3'>
-        <p className='font-bold'>{name.slice(0, name.lastIndexOf(' '))}</p>
+        <p className='font-bold'>{abbr}</p>
         <p className='text-text-secondary'>
           <span className='mr-1'>$</span>
           <span>{price}</span>

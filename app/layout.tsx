@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Manrope } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
 import Header from '@/components/header/Header';
-import CartContextProvider from './contexts/CartContext';
+import CartContextProvider from '../contexts/CartContext';
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--font-monrope' });
 

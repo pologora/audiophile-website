@@ -35,6 +35,7 @@ interface Product {
   includes: IncludesItem[];
   gallery: Gallery;
   others: OtherProducts[];
+  abbr: string;
 }
 
 export default Product;

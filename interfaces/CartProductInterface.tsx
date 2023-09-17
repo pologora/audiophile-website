@@ -3,5 +3,6 @@ interface CartProduct {
   productQuantity: number;
   name: string;
   price: number;
+  abbr: string;
 }
 export default CartProduct;

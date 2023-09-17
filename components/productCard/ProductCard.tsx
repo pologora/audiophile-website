@@ -1,13 +1,13 @@
 'use client';
 
-import Product from '@/interfaces/productInterface';
+import Product from '@/interfaces/ProductInterface';
 import { useState } from 'react';
 import ProductCardGallary from './ProductCardGallary';
 import ProductIncludes from './ProductIncludes';
 import ProductFeatures from './ProductFeatures';
 import ProductAddToCart from './ProductAddToCart';
 import OtherProducts from './OtherProducts';
-import { useCartContext } from '@/app/contexts/CartContext';
+import { useCartContext } from '@/contexts/CartContext';
 import CartProduct from '@/interfaces/CartProductInterface';
 
 const getProductNameAndCategory = (productName: string) => {
@@ -47,6 +47,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     price,
     slug,
     newProduct,
+    abbr,
   } = product;
 
   const handleAddToCart = () => {
@@ -55,6 +56,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       productQuantity,
       name,
       price,
+      abbr,
     };
 
     setCart((prev: CartProduct[]) => {
