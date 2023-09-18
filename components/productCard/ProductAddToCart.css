@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.change-quantity-btn {
+  @apply uppercase py-3 w-12 text-center bg-bg-light-secondary flex items-center justify-center;
+}
+
+@media (min-width: 640px) and (max-width: 880px) {
+  .change-quantity-btn {
+    @apply py-2 w-10 text-sm;
+  }
+}

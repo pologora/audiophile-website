@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import './ZX9Speaker.css';
 
 const ZX9Speaker = () => {
   return (

@@ -21,7 +21,7 @@ const formDefaultData = {
   phone: {
     value: '',
     error: false,
-    errorMessage: 'Wrong format',
+    errorMessage: 'At least 7 digits',
     pattern: /^[0-9-+() ]{7,20}$/,
   },
   adress: {
@@ -57,13 +57,13 @@ const formDefaultData = {
   e_money_number: {
     value: '',
     error: false,
-    errorMessage: 'Wrong format',
+    errorMessage: 'Must be 8 digits',
     pattern: /^\d+$/,
   },
   e_money_pin: {
     value: '',
     error: false,
-    errorMessage: 'Wrong format',
+    errorMessage: 'Must be 4 digits',
     pattern: /^\d{4}$/,
   },
 } as Record<string, FormField>;

@@ -9,6 +9,7 @@ const Checkout = () => {
   const [state, setState] = useState(formDefaultData);
   const [isOpenConfirmModal, setIsOpenConfirmModal] = useState(false);
 
+
   const closeConfirmModal = () => setIsOpenConfirmModal(false);
   const openConfirmModal = () => setIsOpenConfirmModal(true);
 
@@ -24,15 +25,15 @@ const Checkout = () => {
 
   const onSubmit = () => {
     let isError = false;
-    // for (const [key, value] of Object.entries(state)) {
-    //   const isValid = isValidInputValue(value.value, value.pattern);
-    //   if (!isValid) {
-    //     isError = true;
-    //     setState((prev) => {
-    //       return { ...prev, [key]: { ...prev[key], error: true } };
-    //     });
-    //   }
-    // }
+    for (const [key, value] of Object.entries(state)) {
+      const isValid = isValidInputValue(value.value, value.pattern);
+      if (!isValid) {
+        isError = true;
+        setState((prev) => {
+          return { ...prev, [key]: { ...prev[key], error: true } };
+        });
+      }
+    }
     if (!isError) {
       acceptForm();
       openConfirmModal();
@@ -50,14 +51,18 @@ const Checkout = () => {
   };
 
   return (
-    <div className='bg-bg-light-secondary px-6 border'>
-      <GoBackBtn />
-      <CheckoutForm handleChange={handleInputChange} state={state} />
-      <Summary
-        onSubmit={onSubmit}
-        closeConfirmModal={closeConfirmModal}
-        isOpenConfirmModal={isOpenConfirmModal}
-      />
+    <div className='bg-bg-light-secondary px-6'>
+      <div className='custom-container'>
+        <GoBackBtn />
+      </div>
+      <div className='lg:flex gap-4 custom-container'>
+        <CheckoutForm handleChange={handleInputChange} state={state} />
+        <Summary
+          onSubmit={onSubmit}
+          closeConfirmModal={closeConfirmModal}
+          isOpenConfirmModal={isOpenConfirmModal}
+        />
+      </div>
     </div>
   );
 };

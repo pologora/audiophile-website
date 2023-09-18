@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import './ProductAddToCart.css';
 
 type ProductAddToCartProps = {
   quantity: number;
@@ -29,7 +30,7 @@ const ProductAddToCart = ({
   };
 
   return (
-    <>
+    <div className='flex w-full gap-5'>
       <div className='flex'>
         <button
           className={`change-quantity-btn  ${substractionButtonStateClass}`}
@@ -37,9 +38,7 @@ const ProductAddToCart = ({
         >
           -
         </button>
-        <span className='change-quantity-btn flex items-center justify-center'>
-          {quantity}
-        </span>
+        <span className='change-quantity-btn'>{quantity}</span>
         <button
           className='change-quantity-btn hover:text-bg-accent'
           onClick={add}
@@ -47,7 +46,6 @@ const ProductAddToCart = ({
           +
         </button>
       </div>
-
       <button
         className={`button bg-bg-accent hover:bg-bg-accent-hover active:bg-bg-accent-hover
 text-text-light ${isLoading && 'loading'}`}
@@ -56,7 +54,7 @@ text-text-light ${isLoading && 'loading'}`}
       >
         {isLoading ? <div className='loader'></div> : 'add to cart'}
       </button>
-    </>
+    </div>
   );
 };
 export default ProductAddToCart;

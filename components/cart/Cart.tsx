@@ -82,8 +82,8 @@ const Cart = ({ isOpen, onClose }: CartProps) => {
           <span className='font-bold'>${totalPrice}</span>
         </div>
         <Link
-          href={'/checkout '}
-          className='button bg-bg-accent text-text-light text-center'
+          href={'/checkout'}
+          className='button bg-bg-accent text-text-light text-center hover:bg-bg-accent-hover'
           onClick={onClose}
         >
           checkout

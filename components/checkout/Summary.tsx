@@ -1,4 +1,4 @@
-import './summary.css';
+import './Summary.css';
 import { useCartContext } from '@/contexts/CartContext';
 import SummaryElement from './SummaryElement';
 import OrderConfirmModal from './OrderConfirmModal';
@@ -31,7 +31,7 @@ const Summary = ({
   });
 
   return (
-    <section className='rounded-lg my-10 bg-bg-light-primary px-4 py-6'>
+    <section className='rounded-lg my-10 bg-bg-light-primary px-4 py-6 lg:m-0 lg:w-1/3 lg:h-fit'>
       <h2 className='h6 font-medium mb-6'>summary</h2>
       <div>{renderedElelments}</div>
       <div className='mt-6'>

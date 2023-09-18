@@ -1,8 +1,9 @@
 'use client';
+import { useCartContext } from '@/contexts/CartContext';
 import CartProduct from '@/interfaces/CartProductInterface';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 type OrderConfirmModalProps = {
   cart: CartProduct[];
@@ -22,6 +23,12 @@ const OrderConfirmModal = ({
     (acc, item) => acc + item.productQuantity,
     -1
   );
+  const { setCart } = useCartContext();
+
+  const handleBackHomeClick = () => {
+    closeConfirmModal();
+    setCart([]);
+  };
 
   const togleItemsShow = () => setShowAllItems((prev) => !prev);
 
@@ -108,8 +115,8 @@ const OrderConfirmModal = ({
 
         <Link
           href={'/'}
-          onClick={closeConfirmModal}
-          className='button bg-bg-accent text-text-light w-full text-center'
+          onClick={handleBackHomeClick}
+          className='button bg-bg-accent text-text-light w-full text-center hover:bg-bg-accent-hover'
         >
           back to home
         </Link>

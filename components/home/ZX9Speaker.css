@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --big-circle-radius-sm: 37rem;
+  --middle-circle-radius-sm: 20rem;
+  --small-circle-radius-sm: 17rem;
+  --big-circle-radius-md: 50rem;
+  --middle-circle-radius-md: 28rem;
+  --small-circle-radius-md: 24rem;
+  --big-circle-radius-lg: 50rem;
+  --middle-circle-radius-lg: 28rem;
+  --small-circle-radius-lg: 24rem;
+}
+
+.imageOutCircle {
+  @apply border rounded-full  border-white flex justify-center items-center border-opacity-20;
+}
+
+.smallCircle {
+  width: var(--small-circle-radius-sm);
+  height: var(--small-circle-radius-sm);
+}
+
+.mediumCircle {
+  width: var(--middle-circle-radius-sm);
+  height: var(--middle-circle-radius-sm);
+}
+
+.bigCircle {
+  width: var(--big-circle-radius-sm);
+  height: var(--big-circle-radius-sm);
+}
+
+@media (min-width: 640px) {
+  .bigCircle {
+    width: var(--big-circle-radius-md);
+    height: var(--big-circle-radius-md);
+  }
+  .smallCircle {
+    width: var(--small-circle-radius-md);
+    height: var(--small-circle-radius-md);
+  }
+
+  .mediumCircle {
+    width: var(--middle-circle-radius-md);
+    height: var(--middle-circle-radius-md);
+  }
+}
+
+@media (min-width: 1024px) {
+  .bigCircle {
+    width: var(--big-circle-radius-lg);
+    height: var(--big-circle-radius-lg);
+  }
+  .smallCircle {
+    width: var(--small-circle-radius-lg);
+    height: var(--small-circle-radius-lg);
+  }
+  .mediumCircle {
+    width: var(--middle-circle-radius-lg);
+    height: var(--middle-circle-radius-lg);
+  }
+}

@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.change-quantity-cart-btn {
+  @apply uppercase py-2 text-sm inline-block w-10 text-center bg-bg-light-secondary;
+}

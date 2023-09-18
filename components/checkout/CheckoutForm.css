@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --error-clr: red;
+}
+
+.form-section-container {
+  @apply sm:flex flex-wrap justify-between;
+}
+
+.form-element {
+  @apply sm:w-[48%];
+}
+
+.form-full-w-element {
+  @apply w-full;
+}
+
+input[type='radio'] {
+  @apply accent-bg-accent;
+}
+
+form h2 {
+  @apply text-bg-accent tracking-wider uppercase font-medium my-4;
+}
+
+form label {
+  @apply font-medium block capitalize mb-1;
+}
+
+form input[type='text'],
+form input[type='number'],
+form input[type='email'] {
+  @apply bg-bg-light-primary border rounded-md px-4 py-3 mb-4 w-full;
+}
+
+input:focus {
+  outline: none;
+  @apply border-bg-accent;
+}
+
+.label-error-wrapper {
+  @apply flex justify-between;
+}
+
+.error {
+  @apply text-[var(--error-clr)];
+}
