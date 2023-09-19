@@ -1,4 +1,4 @@
-import './Summary.css';
+import './summary.css';
 import { useCartContext } from '@/contexts/CartContext';
 import SummaryElement from './SummaryElement';
 import OrderConfirmModal from './OrderConfirmModal';
