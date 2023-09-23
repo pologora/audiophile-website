@@ -2,6 +2,11 @@
 
 I'm excited to present this e-commerce website, a project I developed to demonstrate my skills as a frontend developer. This multi-page full responsive e-commerce site, built with Next.js, TypeScript, and Tailwind CSS, showcases my proficiency in these modern web development technologies.
 
+## Technologies and tools
+- **Next.js**
+- **TypeScript**
+- **Tailwindcss**
+
 ## Project Highlights:
 
 - **Figma Design Implementation:** I meticulously translated a Figma design file into a fully functional and responsive website. The attention to detail in matching the design's aesthetics and interactions demonstrates my commitment to creating pixel-perfect user interfaces.
@@ -23,7 +28,3 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 
 
 
-## Technologies and tools
-- **Next.js**
-- **TypeScript**
-- **Tailwindcss**
