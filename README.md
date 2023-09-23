@@ -18,7 +18,7 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 <img src="https://i.ibb.co/jzthWRT/mobile-2.png" alt="Audiophile website screenshot" width="200" />
 
 
-Development version: 
+### Live
 [Check live](https://audiophile-website-pologora.vercel.app/)
 
 
