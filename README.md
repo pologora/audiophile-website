@@ -10,7 +10,7 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 
 ### Screenshots
 
-<img src="[https://i.ibb.co/kMv0gFw/android-start.jpg]" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/kMv0gFw/android-start.jpg" alt="Audiophile website screenshot" width="200" />
 <img src="https://ibb.co/gV8pcbx" alt="Audiophile website screenshot" width="200" />
 <img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
 <img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
@@ -18,11 +18,11 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 <img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
 
 Development version: 
-[Check live][https://best-ever-magazyn.netlify.app/](https://audiophile-website-pologora.vercel.app/)
+[Check live](https://audiophile-website-pologora.vercel.app/)
 
 
 
 ## Technologies and tools
-- Next.js
-- TypeScript
-- Tailwindcss
+- **Next.js**
+- **TypeScript**
+- **Tailwindcss**
