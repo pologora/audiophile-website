@@ -10,12 +10,8 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 
 ### Screenshots
 
-<img src="https://i.ibb.co/kMv0gFw/android-start.jpg" alt="Audiophile website screenshot" width="200" />
-<img src="https://ibb.co/gV8pcbx" alt="Audiophile website screenshot" width="200" />
-<img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
-<img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
-<img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
-<img src="[https://i.ibb.co/kMv0gFw/android-start.jpg](https://ibb.co/fG1DXkB)" alt="Audiophile website screenshot" width="200" />
+<img src="https://ibb.co/fG1DXkB" alt="Audiophile website screenshot" width="200" />
+
 
 Development version: 
 [Check live](https://audiophile-website-pologora.vercel.app/)
