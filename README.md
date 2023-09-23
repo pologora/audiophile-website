@@ -11,6 +11,11 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 ### Screenshots
 
 <img src="https://i.ibb.co/cygxFD2/desktop-1.png" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/bsJmpwt/tablet-1.png" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/wCDmVKS/desktop-2.png" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/s2wSBJY/desktop-4.png" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/JjyhKsg/mobile-3.png" alt="Audiophile website screenshot" width="200" />
+<img src="https://i.ibb.co/jzthWRT/mobile-2.png" alt="Audiophile website screenshot" width="200" />
 
 
 Development version: 
