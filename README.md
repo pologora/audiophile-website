@@ -10,7 +10,7 @@ I'm excited to present this e-commerce website, a project I developed to demonst
 
 ### Screenshots
 
-<img src="https://ibb.co/fG1DXkB" alt="Audiophile website screenshot" width="200" />
+<img src="https://ibb.co/Mg29VMP" alt="Audiophile website screenshot" width="200" />
 
 
 Development version: 
